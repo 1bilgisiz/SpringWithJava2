@@ -10,7 +10,7 @@ import Kodlama.io.progWithsub.business.responses.GetAllSubTechnologyResponses;
 
 public interface SubTechnologyService {
 	List<GetAllSubTechnologyResponses> getAll();
-	void add(CreateLanguageRequest createLanguageRequest );
 	void delete(DeleteSubTechnologyRequest deletePlanguageRequest );
 	void update(int id, UpdateSubTechnologyRequest subTechnologyRequest );
+	void add(CreateSubTechnologyRequest createLanguageRequest);
 }

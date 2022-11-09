@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import Kodlama.io.progWithsub.business.abstracts.SubTechnologyService;
-import Kodlama.io.progWithsub.business.requests.CreateLanguageRequest;
+import Kodlama.io.progWithsub.business.requests.CreateSubTechnologyRequest;
 import Kodlama.io.progWithsub.business.requests.DeleteSubTechnologyRequest;
 import Kodlama.io.progWithsub.business.requests.UpdateSubTechnologyRequest;
 import Kodlama.io.progWithsub.business.responses.GetAllSubTechnologyResponses;
@@ -35,7 +35,7 @@ public class SubTechnologyControllers {
 		
 	}
 	@PostMapping
-	public void add(CreateLanguageRequest createLanguageRequest) {
+	public void add(CreateSubTechnologyRequest createLanguageRequest) {
 		this.subTechnologyService.add(createLanguageRequest);
 	}
 	

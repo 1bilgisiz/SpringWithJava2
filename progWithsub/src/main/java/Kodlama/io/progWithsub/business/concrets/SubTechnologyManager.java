@@ -7,11 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import Kodlama.io.progWithsub.business.abstracts.SubTechnologyService;
+import Kodlama.io.progWithsub.business.requests.CreateLanguageRequest;
 import Kodlama.io.progWithsub.business.requests.CreateSubTechnologyRequest;
 import Kodlama.io.progWithsub.business.requests.DeleteSubTechnologyRequest;
 import Kodlama.io.progWithsub.business.requests.UpdateSubTechnologyRequest;
 import Kodlama.io.progWithsub.business.responses.GetAllSubTechnologyResponses;
 import Kodlama.io.progWithsub.dataAccess.abstracts.SubTechnologyRepostory;
+import Kodlama.io.progWithsub.entities.concrets.PLanguage;
 import Kodlama.io.progWithsub.entities.concrets.SubTechnology;
 
 
@@ -80,5 +82,7 @@ public class SubTechnologyManager implements SubTechnologyService {
 		subTechnologyRepostory.save(subTechnology);
 		
 	}
+
+
 
 }
